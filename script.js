@@ -3,7 +3,7 @@ var isDate = function (input) {
 	if(input instanceof Date && !isNaN(input.getTime())){
 		return true;
 	}
-	const pasedDate = new Date(input);
+	const parsedDate = new Date(input);
 
 	return !isNaN(parsedDate.getTime());
 };
